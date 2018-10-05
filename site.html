@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+  </head>
+  <body background="Autobot1.png">
+
+
+
+    <p>Click below to sign in</p>
+
+    <button onclick="setTimeout(myFunction, 10000);">Click me</button>
+
+    <script>
+    function myFunction() {
+        alert('You have recieved a message from Dat_boi78');
+    }
+    </script>
+
+    <p>Click the button below:</p>
+
+    <button onclick="number1()">Click me to download more RAM</button>
+
+    <script>
+    function number1() {
+          alert("Hahahahaha! Ya done son!");
+    }
+    </script><br>
+
+    <br><button onclick="myFunction()">Click this</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var str = "Cool thing!";
+    var result = str.link("https://www.freecodecamp.org/");
+    document.getElementById("demo").innerHTML = result;
+}
+</script>
+    <h2>Click the dropdown for information</h2>
+<p>Click on the button to open the dropdown menu.</p>
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Click Here</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#you got pranked">Home</a>
+    <a href="#you fell for it again">About</a>
+    <a href="#git gud">Contact</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+</script>
+
+<h3>Enter your last name</h3>
+
+<input id="myInput" value="Last Name">
+<button id="myBtn" onclick="javascript:alert('Get Rekt!')">Enter</button>
+
+<script>
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("myBtn").click();
+
+    }
+});
+
+
+</script>
+  </body>
+</html>
